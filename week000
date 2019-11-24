@@ -16,7 +16,7 @@ class Solution {
         ListNode tail = l3;
         int preFlag = 0;
 
-        while(l1 != null || l2 != null || preFlag > 0) {
+        while(l1 != null || l2 != null || preFlag/10 > 0) {
             preFlag /= 10;
             if (l1 != null) {
                 preFlag += l1.val;
